@@ -7,15 +7,12 @@ int main(int argc, char** argv) {
     char* key = NULL;
     char key1[] = "key1";
     uint16_t ratio1 = 1;
-    int value1 = 1;
 
     char key2[] = "key2";
     uint16_t ratio2 = 2;
-    int value2 = 2;
 
     char key3[] = "key3";
     uint16_t ratio3 = 3;
-    int value3 = 3;
 
     int cnt1 = 0;
     int cnt2 = 0;
@@ -23,21 +20,18 @@ int main(int argc, char** argv) {
 
     int i = 0;
 
-    InputType it[3] = {
+    Item it[3] = {
         {
             (void *)key1,
-            ratio1,
-            (void *)&value1
+            ratio1
         },
         {
             (void *)key2,
-            ratio2,
-            (void *)&value2
+            ratio2
         },
         {
             (void *)key3,
-            ratio3,
-            (void *)&value3
+            ratio3
         }
     };
 

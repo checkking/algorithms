@@ -2,16 +2,15 @@
 #define CHECKKING_ALGORITHMS_SELECTION_H
 #include <stdint.h>
 
-typedef struct InputType {
-    const void* key;
+typedef struct Item {
+    const void* item;
     uint16_t ratio;
-    void* data;
-} InputType;
+} Item;
 
 
 /**
  * @param InputType array
  * @return select key or null
  */
-const void* rand_select(InputType* arr, int n);
+const void* rand_select(Item* arr, int n);
 #endif

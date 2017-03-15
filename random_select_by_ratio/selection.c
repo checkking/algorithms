@@ -6,7 +6,7 @@
 typedef enum { false, true } bool;
 static bool sranded = false;
 
-const void* rand_select(InputType* arr, int n) {
+const void* rand_select(Item* arr, int n) {
     uint16_t all = 0;
     int i = 0;
     uint16_t j = 1;
@@ -20,8 +20,8 @@ const void* rand_select(InputType* arr, int n) {
     }
     x = mt_random(1, all);
     for (i = 0; i < n; ++i) {
-        if (x >= j && x < j + arr[i].ratio) {
-            return arr[i].key;
+       if (x >= j && x < j + arr[i].ratio) {
+            return arr[i].item;
         }
         j += arr[i].ratio;
     }
