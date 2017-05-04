@@ -21,4 +21,5 @@ An implementation of Reservoir sampling, you can use it to sample file lines
 **证明:**
 第m个对象被选中的概率=选择m的概率*（其后元素不被选择的概率+其后元素被选择的概率*不替换第m个对象的概率），即:
 
-P = k/m * [((m+1-k)/(m+1) + k/(m+1) * (k-1)/k) * ((m+2-k)/(m+2) + k/(m+2) * (k-1)/k) * ((n-k)/n + k/n * (k-1)/k)] = k/m * m/n = k/n
+![证明](http://my.csdn.net/uploads/201205/31/1338455236_7354.gif)
+
