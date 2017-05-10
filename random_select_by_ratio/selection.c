@@ -2,7 +2,7 @@
 #include <time.h>
 #include "selection.h"
 
-#define mt_random(l, h) (rand() % ((h) - (l) + 1) + (l));
+#define mt_random(l, h) (rand() % ((h) - (l) + 1) + (l))
 typedef enum { false, true } bool;
 static bool sranded = false;
 

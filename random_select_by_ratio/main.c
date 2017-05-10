@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "selection.h"
 
-#define MAXITERATIVE 10000
+#define MAXITERATIVE 100000
 
 int main(int argc, char** argv) {
     char* key = NULL;

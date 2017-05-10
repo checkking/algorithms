@@ -9,7 +9,7 @@ typedef struct Item {
 
 
 /**
- * @param InputType array
+ * @param Item array
  * @return select key or null
  */
 const void* rand_select(Item* arr, int n);
